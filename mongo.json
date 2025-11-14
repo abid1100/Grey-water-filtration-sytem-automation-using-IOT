@@ -1,0 +1,16 @@
+// readings collection
+{
+  "_id": "67403bdfb27...",
+  "device_id": "esp32-hydro-01",
+  "sensors": { "pH": 6.7, "tds": 1.23 },
+  "received_at": "2025-11-12T10:45:00Z",
+  "topic": "hydro/esp32-hydro-01/sensors"
+}
+// events collection
+{
+  "_id": "67403c6bb27...",
+  "device_id": "esp32-hydro-01",
+  "command": { "cmd": "injector", "action": "on" },
+  "timestamp": "2025-11-12T10:46:00Z"
+}
+
