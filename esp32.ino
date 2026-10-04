@@ -1,3 +1,7 @@
+#include <esp_timer.h>
+#include <driver/gpio.h>
+#include <freertos/FreeRTOS.h>
+#include <freertos/portmacro.h>
 #include <WiFi.h>
 #include <PubSubClient.h>
 #include <ArduinoJson.h>
@@ -7,7 +11,6 @@ const char* WIFI_PASS = "YOUR_WIFI_PASSWORD";
 const char* MQTT_BROKER = "192.168.1.100";   // Raspberry Pi IP
 const uint16_t MQTT_PORT = 1883;
 const char* DEVICE_ID = "esp32-hydro-01";
-
 const char* SENSOR_TOPIC = "hydro/";
 const char* CMD_TOPIC = "hydro/";
 
